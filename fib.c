@@ -18,25 +18,6 @@ Program description:
 unsigned long long int *memoizedFibonacciNumbersArray;
 
 /*
- Function readFileInteger takes one input,
- a string, and returns an integer. The function
- opens the file specified by the input string,
- and pulls an integer from the file to return.
-
-*/
-
-int readFileInteger(char *fileName){
-   FILE *myFile;                           // Create the file stream
-   myFile = fopen(fileName, "r");          // Open the file for reading only
-
-   int fileReadNumber;              
-   fscanf(myFile, "%d", &fileReadNumber);  // Read the integer from the file
-   fclose(myFile);                         // Close the file
-
-   return fileReadNumber;
-}
-
-/*
  Function fibRecursivelyWrapper takes in 1
  integer, and calculates the Nth fibonacci
  number recursively.
